@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue 组件开发以及 npm 发包 | surelee</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/logo.jpg">
+    <link rel="manifest" href="/images/logo.jpg">
+    <link rel="apple-touch-icon" href="/images/logo.jpg">
+    <meta name="description" content="stay hungry stay foolish">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.a44762a1.js" as="script"><link rel="preload" href="/assets/js/2.87c5fdf1.js" as="script"><link rel="preload" href="/assets/js/14.7bbed1d5.js" as="script"><link rel="prefetch" href="/assets/js/10.95a5ab74.js"><link rel="prefetch" href="/assets/js/11.bd7e8703.js"><link rel="prefetch" href="/assets/js/12.45a3046a.js"><link rel="prefetch" href="/assets/js/13.b86b52ac.js"><link rel="prefetch" href="/assets/js/15.0a12d808.js"><link rel="prefetch" href="/assets/js/3.6d96500d.js"><link rel="prefetch" href="/assets/js/4.044439be.js"><link rel="prefetch" href="/assets/js/5.f9d607d0.js"><link rel="prefetch" href="/assets/js/6.efee1e56.js"><link rel="prefetch" href="/assets/js/7.2aa77e6e.js"><link rel="prefetch" href="/assets/js/8.e6a33bc8.js"><link rel="prefetch" href="/assets/js/9.d68b0752.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.jpg" alt="surelee" class="logo"> <span class="site-name can-hide">surelee</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/web/vue/communication.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/blog/web/js/js.html" class="nav-link">
+  JS基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/tools/npm.html" class="nav-link">
+  npm
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/surele" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/web/vue/communication.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/blog/web/js/js.html" class="nav-link">
+  JS基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/tools/npm.html" class="nav-link">
+  npm
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/surele" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/web/vue/communication.html" class="sidebar-link">6种通信方式</a></li><li><a href="/blog/web/vue/npm-plugin.html" aria-current="page" class="active sidebar-link">npm组件开发和发布</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/web/vue/npm-plugin.html#_1、vue-组件开发" class="sidebar-link">1、vue 组件开发</a></li><li class="sidebar-sub-header"><a href="/blog/web/vue/npm-plugin.html#_2、npm-发包" class="sidebar-link">2、npm 发包</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-组件开发以及-npm-发包"><a href="#vue-组件开发以及-npm-发包" class="header-anchor">#</a> vue 组件开发以及 npm 发包</h1> <h2 id="_1、vue-组件开发"><a href="#_1、vue-组件开发" class="header-anchor">#</a> 1、vue 组件开发</h2> <h2 id="_2、npm-发包"><a href="#_2、npm-发包" class="header-anchor">#</a> 2、npm 发包</h2> <h3 id="什么是-npm"><a href="#什么是-npm" class="header-anchor">#</a> 什么是 npm?</h3> <p>npm 其实是 Node.js 的包管理工具（package manager）。</p> <p>为啥我们需要一个包管理工具呢？因为我们在 Node.js 上开发时，会用到很多别人写的 JavaScript 代码。如果我们要使用别人写的某个包，每次都根据名称搜索一下官方网站，下载代码，解压，再使用，非常繁琐。于是一个集中管理的工具应运而生：大家都把自己开发的模块打包后放到 npm 官网上，如果要使用，直接通过 npm 安装就可以直接用，不用管代码存在哪，应该从哪下载。</p> <p>更重要的是，如果我们要使用模块 A，而模块 A 又依赖于模块 B，模块 B 又依赖于模块 X 和模块 Y，npm 可以根据依赖关系，把所有依赖的包都下载下来并管理起来。否则，靠我们自己手动管理，肯定既麻烦又容易出错。</p> <p>讲了这么多，npm 究竟在哪？</p> <p>其实 npm 已经在 Node.js 安装的时候顺带装好了。</p> <h3 id="准备工作"><a href="#准备工作" class="header-anchor">#</a> 准备工作：</h3> <p>注册 npm 账号：<a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">官网地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在终端执行：</p> <div class="language- extra-class"><pre class="language-text"><code>npm addUser
+</code></pre></div><p>或者执行：</p> <div class="language- extra-class"><pre class="language-text"><code>npm login
+</code></pre></div><h3 id="npm-init-生成-package-json-说明书文件"><a href="#npm-init-生成-package-json-说明书文件" class="header-anchor">#</a> npm init (生成 package.json 说明书文件)</h3> <p>cd 进项目所在的文件夹，执行</p> <div class="language- extra-class"><pre class="language-text"><code>npm init
+</code></pre></div><p>可以使用<code>npm init -y</code>跳过向导，快速生成</p> <p>接下来就是一长串表单：</p> <ul><li><p>name：填写你这个包的名字，默认是你这个文件夹的名字。不过这里要着重说一下，最好先去 npm 上找一下有没有同名的包。最好的测试方式就是，在命令行里面输入<code>npm install 你要取的名字</code>，如果报错，那么很好，npm 上没有跟你同名的包，你可以放心大胆地把包发布出去。如果成功下载下来了。。。那么很不幸，改名字吧。。。</p></li> <li><p>version：你这个包的版本，默认是 1.0.0</p></li> <li><p>description：这个用一句话描述你的包是干嘛用的，比如我就直接：‘a plugin for express.register routes base on file path’</p></li> <li><p>entry point：入口文件，默认是<code>index.js</code>，你也可以自己填写你自己的文件名</p></li> <li><p>test command：测试命令，这个直接回车就好了，因为目前还不需要这个。</p></li> <li><p>git repository：这个是 git 仓库地址，如果你的包是先放到 github 上或者其他 git 仓库里，这时候你的文件夹里面会存在一个隐藏的<code>.git</code>目录，npm 会读到这个目录作为这一项的默认值。如果没有的话，直接回车继续。</p></li> <li><p>keyword：这个是一个重点，这个关系到有多少人会搜到你的 npm 包。尽量使用贴切的关键字作为这个包的索引。我这个包嘛，第一是在<code>express</code>下工作的，然后又是一个插件<code>plugin</code>，然后又是一个注册路由<code>route</code>用的，而这个路由又是基于文件目录<code>dir</code>，所以很好就得出我的包的索引关键字。</p></li> <li><p>author：写你的账号或者你的 github 账号吧</p></li> <li><p>license：这个直接回车，开源文件来着。。</p></li></ul> <p><strong>version 版本</strong></p> <p>规则：对于<code>&quot;version&quot;:&quot;x.y.z&quot;</code></p> <ul><li>1:【major 主要更新】有很大的改动，无法向后兼容,增加 <code>x</code></li> <li>2.【minor 次要更新】增加了新特性，但仍能向后兼容，增加 <code>y</code></li> <li>3.【patch 补丁】修复 bug,小改动，增加 <code>z</code></li> <li>4.【prerelease 预览版】
+eg.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&quot;2.3.4-alpha.3&quot; ==&quot;major.minor.patch-prerelease&quot;
+</code></pre></div><p>在当前目录下使用<code>npm publish</code></p> <p>注意发布前确认是否已经登陆
+可以用 <code>npm who am i</code>检查登陆状态</p> <p>要是用淘宝镜像的，需要切换回来：
+npm config set registry http://registry.npmjs.org</p> <p><code>npm install 你发布出去的包的名字</code> 尝试下载安装发布的包
+一般发布成功后会受到发布成功的邮件提醒</p> <p>问题场景：npm publish 发布一个 npm 包，发布的时候你希望只发布打包的文件，包的源码，单元测试等文件不希望发布；
+.npmignore 中的文件不会被发布，默认情况下，npm publish 发布目录中的所有文件，除了</p> <p>._.swp
+.__
+.DS_Store
+.git
+.hg
+.npmrc
+.lock-wscript
+.svn
+.wafpickle-*
+config.gypi
+CVS
+npm-debug.log
+所以不需要把这些文件加入到.npmignore 中也会忽略，如果没有.npmignore,有.gitignore，那么.gitignore 中的文件会从包中忽略，如果同时存在，那么.npmignore 的优先级更好</p> <p>这些是默认发布的文件，加入.gitignore 和.npmignore 都是不会生效的：</p> <p>package.json
+README(and its variants)
+CHANGELOG(and its variants)
+LICENSE/LICENCE</p> <p>注意的坑
+无法发布到私有包</p> <div class="language- extra-class"><pre class="language-text"><code>npm ERR! publish Failed PUT 402
+npm ERR! code E402
+npm ERR! You must sign up for private packages :
+</code></pre></div><p>这个当你的包名为@your-name/your-package 时才会出现，原因是当包名以@your-name 开头时，npm publish 会默认发布为私有包，但是 npm 的私有包需要付费，所以需要添加如下参数进行发布:</p> <div class="language- extra-class"><pre class="language-text"><code>npm publish --access public
+</code></pre></div><h1 id="参考文章"><a href="#参考文章" class="header-anchor">#</a> 参考文章</h1> <ol><li><a href="https://www.jianshu.com/p/36d3e0e00157" target="_blank" rel="noopener noreferrer">手把手教你用 npm 发布一个包<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/juzipidemimi/article/details/103198486" target="_blank" rel="noopener noreferrer">看在上帝的份上，不要使用 .npmignore<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://segmentfault.com/a/1190000020841543?utm_source=tag-newest" target="_blank" rel="noopener noreferrer">.npmignore、.gitignore 和 package.json 中的 files 字段<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/zhangjing1019/article/details/102896421" target="_blank" rel="noopener noreferrer">发布 npm 包时遇到的一些坑<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.jianshu.com/p/d616d3bf391f" target="_blank" rel="noopener noreferrer">如何让你的npm项目自动更新版本号<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2021-6-15 5:10:50 ├F10: PM┤</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/web/vue/communication.html" class="prev">
+        6种通信方式
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a44762a1.js" defer></script><script src="/assets/js/2.87c5fdf1.js" defer></script><script src="/assets/js/14.7bbed1d5.js" defer></script>
+  </body>
+</html>

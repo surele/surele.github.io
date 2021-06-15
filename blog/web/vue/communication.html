@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue 组件开发以及 npm 发包 | surelee</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/logo.jpg">
+    <link rel="manifest" href="/images/logo.jpg">
+    <link rel="apple-touch-icon" href="/images/logo.jpg">
+    <meta name="description" content="stay hungry stay foolish">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.a44762a1.js" as="script"><link rel="preload" href="/assets/js/2.87c5fdf1.js" as="script"><link rel="preload" href="/assets/js/13.b86b52ac.js" as="script"><link rel="prefetch" href="/assets/js/10.95a5ab74.js"><link rel="prefetch" href="/assets/js/11.bd7e8703.js"><link rel="prefetch" href="/assets/js/12.45a3046a.js"><link rel="prefetch" href="/assets/js/14.7bbed1d5.js"><link rel="prefetch" href="/assets/js/15.0a12d808.js"><link rel="prefetch" href="/assets/js/3.6d96500d.js"><link rel="prefetch" href="/assets/js/4.044439be.js"><link rel="prefetch" href="/assets/js/5.f9d607d0.js"><link rel="prefetch" href="/assets/js/6.efee1e56.js"><link rel="prefetch" href="/assets/js/7.2aa77e6e.js"><link rel="prefetch" href="/assets/js/8.e6a33bc8.js"><link rel="prefetch" href="/assets/js/9.d68b0752.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.jpg" alt="surelee" class="logo"> <span class="site-name can-hide">surelee</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/web/vue/communication.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/blog/web/js/js.html" class="nav-link">
+  JS基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/tools/npm.html" class="nav-link">
+  npm
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/surele" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/web/vue/communication.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/blog/web/js/js.html" class="nav-link">
+  JS基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/tools/npm.html" class="nav-link">
+  npm
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/surele" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/web/vue/communication.html" aria-current="page" class="active sidebar-link">6种通信方式</a></li><li><a href="/blog/web/vue/npm-plugin.html" class="sidebar-link">npm组件开发和发布</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_6-种常见通信方式"><a href="#_6-种常见通信方式" class="header-anchor">#</a> 6 种常见通信方式</h1> <p><img src="/images/communication.webp" alt="通信方式"></p> <ul><li>父子通信</li></ul> <p>父向子传递数据是通过 props，子向父是通过 events（<code>$emit</code>）；通过父链 / 子链也可以通信（<code>$parent</code> / <code>$children</code>）；ref 也可以访问组件实例；provide / inject API；<code>$attrs</code>/<code>$listeners</code></p> <ul><li><p>兄弟通信
+Bus([中央事件总线（事件中心）]<code>$emit</code>/<code>$on</code>)；Vuex</p></li> <li><p>跨级通信
+Bus；Vuex；provide / inject API、<code>$attrs</code>/<code>$listeners</code></p></li></ul> <ol><li><a href="https://juejin.cn/post/6844903845642911752#heading-4" target="_blank" rel="noopener noreferrer">Vue 组件间通信六种方式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2021-6-15 5:10:50 ├F10: PM┤</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/web/vue/npm-plugin.html">
+        npm组件开发和发布
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a44762a1.js" defer></script><script src="/assets/js/2.87c5fdf1.js" defer></script><script src="/assets/js/13.b86b52ac.js" defer></script>
+  </body>
+</html>
